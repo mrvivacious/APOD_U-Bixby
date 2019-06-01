@@ -1,0 +1,3 @@
+name (ImageDateConcept) {
+  description ("The date of the received image.")
+}

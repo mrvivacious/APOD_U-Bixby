@@ -1,0 +1,14 @@
+action (FetchURL) {
+  description (hope dis workz lel)
+  type (Search)
+  
+  collect {
+    input (ImageHDUrlConcept) {
+      type (ImageHDUrlConcept)
+      min (Required) max (One)
+    }
+  }
+
+ 
+  output (ImageHDUrlConcept)
+}

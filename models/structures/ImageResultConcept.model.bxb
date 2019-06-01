@@ -1,0 +1,32 @@
+structure (ImageResultConcept) {
+  description (The result object produce by the GetImage action.)
+  
+  property (ImageDate) {
+    type (ImageDateConcept)
+  }
+  
+  property (ImageExplanation) {
+    type (ImageExplanationConcept)
+  }
+  
+  property (ImageHDUrl) {
+    type (ImageHDUrlConcept)
+  }
+  
+  property (ImageMedia_Type) {
+    type (ImageMedia_TypeConcept)
+  }
+  
+  property (ImageService_Version) {
+    type (ImageService_VersionConcept)
+  }
+  
+  property (ImageTitle) {
+    type (ImageTitleConcept)
+  }
+  
+  property (ImageUrl) {
+    type (ImageUrlConcept)
+  }
+  
+}

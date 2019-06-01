@@ -1,0 +1,5 @@
+train (t-4ajv24bluc9rmnw48zot370nt) {
+  utterance ([g:GetImage] Get the astronomy picture of the day)
+  plan (Y2BiUM0tKsssS0zOzC8t1iuNTyzIT9HzzE1MTw1KLS7NKXHOz0tOLShhkMaizD21BKySgREIGaAYSAIA)
+  last-modified (1554463320845)
+}

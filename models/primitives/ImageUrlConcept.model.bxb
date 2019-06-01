@@ -1,0 +1,3 @@
+name (ImageUrlConcept) {
+  description ("The Url of the received image.")
+}

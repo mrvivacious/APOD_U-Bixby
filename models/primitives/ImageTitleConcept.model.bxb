@@ -1,0 +1,3 @@
+name (ImageTitleConcept) {
+  description ("The title of the received image.")
+}

@@ -1,0 +1,7 @@
+hints {
+    uncategorized {
+        utterance (Show me the Astronomy Picture Of the Day)
+        utterance (What is today's APOD?)
+        utterance (Astronomy Picture Of the Day)
+    }
+}

@@ -1,0 +1,10 @@
+train (t-basfhqm1olqwhql36lcv4shdn) {
+  utterance ([g:GetImage] Show me the astronomy picture of the day)
+  plan (Y2BiUM0tKsssS0zOzC8t1iuNTyzIT9HzzE1MTw1KLS7NKXHOz0tOLShhkMaizD21BKySgREIGaAYSAIA)
+  last-modified (1554463321543)
+}
+train (t-bpldwuaz2eb35taf7r1ptqhmm) {
+  utterance ("[g:GetImage] What is today's apod")
+  plan (Y2BiUM0tKsssS0zOzC8t1iuNTyzIT9HzzE1MTw1KLS7NKXHOz0tOLShhkMaizD21BKySgREIGaAYSAIA)
+  last-modified (1554463322640)
+}

@@ -1,0 +1,7 @@
+endpoints {
+   action-endpoints {
+     action-endpoint (GetImage) {
+       local-endpoint ("GetAPOD.js")
+     }
+   }
+}

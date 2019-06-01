@@ -1,0 +1,10 @@
+dialog (Result) {
+  match {
+    ImageResultConcept (ImageResultConcept) {
+      from-output: GetImage (ImageTitleConcept)
+    }
+  } // match 
+  
+  // Template overrides the "Here's what I found"
+  template ("${value(ImageResultConcept.ImageTitle)}")
+}

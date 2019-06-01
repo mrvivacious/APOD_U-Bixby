@@ -1,0 +1,15 @@
+result-view {
+  match: ImageHDUrlConcept (this) {
+    min(Required) max (One)
+  }
+
+  render {
+    nothing
+  }
+
+  app-launch {
+    payload-uri {
+      template ("#{value(this)}")
+    }
+  }
+}

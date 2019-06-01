@@ -1,0 +1,7 @@
+action (GetImage) {
+  // Specify this action as a calculation (the other types don't compile lol)
+  type (Calculation) 
+
+  // Set the output of this action to "MessageConcept"
+  output (ImageResultConcept)
+}

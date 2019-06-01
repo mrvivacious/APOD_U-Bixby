@@ -1,0 +1,19 @@
+description {
+  displayName (Astronomy Picture Of the Day Unofficial)
+  iconUrl ("https://raw.githubusercontent.com/mrvivacious/Magic-Messages/master/app/src/main/res/drawable-xxhdpi/img_crystal.png")
+  description ("View today's Astronomy Picture Of the Day by NASA via the unofficial Bixby capsule.")
+  
+  // websiteUrl (https://mrvivacious.github.io/posts/Magical_Messages.html)
+  
+  search-keywords {
+    keyword (nasa)
+    keyword (astronomy)
+    keyword (space)
+    keyword (galaxy)
+    keyword (outer space)
+    keyword (astronomy picture)
+    keyword (colorful)
+    keyword (stars)
+    keyword (planets)
+  }
+}
