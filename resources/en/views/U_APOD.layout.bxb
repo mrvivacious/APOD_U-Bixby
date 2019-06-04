@@ -6,57 +6,60 @@ layout {
   content {
     // content.section
     section {
-      // content.section.content, the content of the layout section
-      content {     
-        // Image card that holds the APOD image itself
-        image-card {
-          // Retain the square shape and avoid cropping the image
-          aspect-ratio (1:1)
-          // Accessibility ftw
-          aria-label ("The astronomy picture of the day")
-         
-          // Required, kept empty value because text is not needed on the crystal ball
-          title-area {
+      content {
+        compound-card {
+          content {
+            // Image card that holds the APOD image itself
+            image-card {
+              // Retain the square shape and avoid cropping the image
+              aspect-ratio (1:1)
+              // Accessibility ftw
+              aria-label ("The astronomy picture of the day")
+
+              // Required, kept empty value because text is not needed on the image
+              title-area {
+                slot1 {
+                  text {
+                    value ("")
+                  } // end text
+                } // end slot1
+              } // end title-area
+
+              // The HD URL of the astronomy picture of the day
+              image-url ("#{value(this.ImageHDUrl)}")
+            } // End image-card
+
+            // The date of the APOD
+            paragraph {
+              value ("The APOD for #{value(this.ImageDate)}")
+              style (Title_S)
+            } // End paragraph
+          } // End content
+          
+          chin {
             slot1 {
-              text {
-                value ("")
-              } // end text
-            } // end slot1
-          } // end title-area
-
-          // Attach on-click listener to open a link to the APOD
-          // on-click {
-          //   intent {
-          //     goal: TODO
-          //   } // end intent
-          // } // end on-click
-          
-          // The HD URL of the astronomy picture of the day
-          image-url ("#{value(this.ImageHDUrl)}")
-          
-          // If I click on the image, it better open the fuckin website i swear
-          on-click {
-            intent {
-              goal: FetchURL
-              value: ImageHDUrlConcept ("#{value(this.ImageHDUrl)}")
+              single-line {
+                text("View in browser")
+              }
             }
-          } // End on-click
-        } // End image-card
-
-        // The date of the APOD
-        paragraph {
-          value ("The APOD for #{value(this.ImageDate)}")
-          style (Title_S)
-        } // End paragraph
-        
-        // Small instruction
-        paragraph {
-          // The description of today's APOD
-          value ("#{value(this.ImageExplanation)}")
-          style (Detail_M_Soft)
-        } // End paragraph
-
-      } // End content.section.content
-    } // End content.section
+            // URL to open in browser
+            // Elect to open the main website instead of the image itself
+            // url("#{value(this.ImageHDUrl)}")
+            url("https://apod.nasa.gov/apod/astropix.html")
+          } // End chin
+        } // End compound-card
+      } // End content
+      
+    } // End section
+    section {
+      content {
+         // Small instruction
+            paragraph {
+              // The description of today's APOD
+              value ("#{value(this.ImageExplanation)}")
+              style (Detail_L)
+            } // End paragraph
+      }
+    }
   } // End content
 } // End layout
