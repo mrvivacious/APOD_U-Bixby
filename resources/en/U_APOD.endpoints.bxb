@@ -3,5 +3,8 @@ endpoints {
      action-endpoint (GetImage) {
        local-endpoint ("GetAPOD.js")
      }
+    // action-endpoint (GetSpecificDateImage) {
+    //    local-endpoint ("GetSpecificDateAPOD.js")
+    //  }
    }
 }

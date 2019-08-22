@@ -1,0 +1,21 @@
+result-view {
+  match: ImageResultConcept (this)
+  
+  render {
+    layout-match (this) {
+      mode (Details)
+    }
+  }
+  // Todo
+  // conversation-drivers {
+  //   conversation-driver {
+  //     template ("Date")
+  //   }
+  // }
+//   
+//   conversation-drivers {
+//     conversation-driver {
+//       template ("Another message")
+//     }
+//   }
+}
