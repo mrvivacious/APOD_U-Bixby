@@ -36,17 +36,17 @@ layout {
             } // End paragraph
           } // End content
           
-          chin {
-            slot1 {
-              single-line {
-                text("View in browser")
-              }
-            }
-            // URL to open in browser
-            // Elect to open the main website instead of the image itself
-            // url("#{value(this.ImageHDUrl)}")
-            url("https://apod.nasa.gov/apod/astropix.html")
-          } // End chin
+          // chin {
+          //   slot1 {
+          //     single-line {
+          //       text("View in browser")
+          //     }
+          //   }
+          //   // URL to open in browser
+          //   // Elect to open the main website instead of the image itself
+          //   // url("#{value(this.ImageHDUrl)}")
+          //   url("https://apod.nasa.gov/apod/astropix.html")
+          // } // End chin
         } // End compound-card
       } // End content
       
